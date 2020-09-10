@@ -1,0 +1,77 @@
+import numpy as np
+import pandas as pd
+
+# from pandas import Series, DataFrame
+# series1 = pd.Series([1, 3, 8, 10, 123])
+# print(str.format("根据列表创建：\n{0}", series1))
+# series2 = pd.Series({'a': 10, 'b': 20})
+# series2.name = "序列对象"
+# series2.index.name = "索引"
+# # print(str.format("根据列表创建：\n{0}", series2))
+# # print(series2)
+# # print(series2.index)
+# # print(series2.values)
+# # print(type(series2.values))
+# # print("通过标签访问", series2['b'])
+# # print("访问多个数据:", series2[['a', 'b']])
+# # print("有条件的访问:", series2[series2 > 15])
+# series2['c'] = 30
+# print(series2)
+# series3 = pd.Series([40, 50, 60], index=['d', 'e', 'f'])
+# print(series3)
+# series4 = series2.append(series3)
+# print(series4)
+# df1 = pd.DataFrame(np.random.randint(10, size=(2, 5)))
+# print(df1)
+# print(df1.index)
+# print(df1.columns)
+# print(df1.values)
+# print(df1.dtypes)
+# print("维度：", df1.ndim)
+# print("形状：", df1.shape)
+# print("个数：", df1.size)
+# df2 = pd.DataFrame({'goods': ['coka cola', 'eggplant', 'condom', 'apple', 'banana', 'milk', 'milk'],
+#                     'quantity': [12, 3, 1, 5, 8, 10, 11], 'price': [20, 12, 80, 5.4, 4.5, 49.9, 11]},
+#                    index=['a', 'b', 'c', 'd', 'e', 'f', 'g'])
+# print(df2)
+# df2.drop(['a', 'b'], inplace=True)
+# print('============')
+# print(df2)
+
+# # print("-----------------------")
+# # print(df2['goods'][:2])
+# print("-----------------------")
+# print(df2.head())
+# print("-----------------------")
+# print(df2.head(2))
+# print("-----------------------")
+# print(df2.tail())
+# print("-----------------------")
+# print(df2.tail(2))
+# print(df2[df2.goods == 'milk'])
+# print(df2[df2.price > 10])
+# print(df2.loc[:, 'price'])
+# df2.drop(['g'])
+# print(df2)
+# df2.loc[df2.price < 5, 'quantity'] = 6
+# print(df2)
+# print("sum：", df2[['quantity', 'price']].sum())
+# # print("describe：\n", df2[['quantity', 'price']].describe())
+# print("describe：\n", df2.describe())
+# print(df2['goods'].value_counts())
+# print(df2['goods'].dtypes)
+# df2['goods'] = df2['goods'].astype('category')
+# # print(df2['goods'].dtypes)
+# print(df2['goods'].describe())
+# sdata = {'Ohio': 35000, 'Texas': 71000, 'Oregon': 16000, 'Utah': 5000}
+# states = ['California', 'Ohio', 'Oregon', 'Texas']
+# obj4 = pd.Series(sdata, index = states)
+# print(obj4)
+# df = pd.DataFrame({'one': [0, 4, 8, 12, 16, 20], 'two': [1, 5, 9, 13, 17, 21], 'three': [2, 6, 10, 14, 18, 22], 'four': [3, 7, 11, 15, 19, 23]}, index=['Ohio', 'Colorado', 'Utah', 'New York', 'Ohio', 'New York'])
+# print(df)
+# # print(df.describe())
+# df['two'].loc['Ohio'] = 1000
+# print(df)
+s1 = pd.Series({'a': 7.3, 'c': -2.5, 'd': 3.4, 'e': 1.5})
+s2 = pd.Series({'a': -2.1, 'c': 3.6, 'e': -1.5, 'f': 4.0, 'g': 3.1})
+print(s1+s2)
