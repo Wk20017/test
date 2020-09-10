@@ -7,3 +7,4 @@ import pandas as pd
 # name = ['A1', 'A2', 'A3', 'A4', 'info']
 df = pd.read_csv('data2.csv')
 print(df)
+# this is just a test
