@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+#axis=1: 按列计算    axis=0： 按行计算
+
 # df = pd.DataFrame(np.random.randn(10, 6))
 # df.iloc[:4, 1] = None
 # df.iloc[:2, 4:6] = None
@@ -52,3 +54,10 @@ import pandas as pd
 # act = action(99)
 # print(act(3))
 
+df = pd.read_csv('data1.csv')
+print(df)
+print('----------------')
+new_df = df.loc[:, 'a']
+print(new_df)
+print('----------------')
+print(pd.get_dummies(new_df))

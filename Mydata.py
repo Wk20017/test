@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import json
 # df = pd.read_csv('data1.csv')
+# print(type(df))
+
 # df = pd.read_csv('data1.csv', header=None)
 # df = pd.read_csv('data1.csv', names=['a', 'b', 'c', 'd', 'info'])
 # df = pd.read_table('data1.csv', sep=',')
